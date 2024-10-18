@@ -1,0 +1,39 @@
+import java.io.*;
+import java.utll.*;
+public class BinarySearch demo{
+    public static void main(string args[]){
+        Scanner Sc = new Scanner(system.in);
+        int pos=-1;
+        System.out.println("Enter no of element of array");
+        int n = Sc.nextint();
+        int arr[] = newint[n];
+        System.out.println("Enter "+n+" value");
+        for(int i=0;i<n;i++){
+            arr[i]=sc.next int();
+            System.out.println("enter the key element to search");
+            int key = sc.next int();
+            low = 0;
+            high = 0;
+        while (low<high)
+        {
+            mid=low+(high-low)/2;
+            if(arr[mid]== key){
+            pos=mid+1;
+            break;
+        }
+        else if(arr[mid]>key)
+        {
+            high=mid-1;
+        }
+        else{
+            low=mid+1;
+        }
+        }
+        if(pos ==-1)
+        system.out.println("search unseccesfull");
+        }
+        else
+        system.out.println("Element found "at"=pos+ in the array");
+    }
+}
+}
